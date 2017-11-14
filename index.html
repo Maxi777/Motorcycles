@@ -12,13 +12,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 400 15px/1.8 Lato, sans-serif;
+      font: 400 19px/1.8 Lato, sans-serif;
       color: #993333;
   }
   h3, h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;      
-      font-size: 20px;
+      font-size: 30px;
       color: #000000;
   }
   .container {
@@ -232,7 +232,7 @@
     </a>
 </div>
 
-<!-- Container (The Band Section) -->
+<!-- Container (Fakten) -->
 <div id="band" class="container text-center">
   <h3>Motorräder</h3>
   <p><em>Fakten!</em></p>
@@ -275,16 +275,14 @@
   </div>
 </div>
 
-<!-- Container (TOUR Section) -->
-<div id="tour" class="bg-1">
+<!-- Container (Geschichte Section) -->
+<div id="Geschichte" class="bg-1">
   <div class="container">
-    <h3 class="text-center">TOUR DATES</h3>
-    <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
-    <ul class="list-group">
-      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
-      <li class="list-group-item">November <span class="badge">3</span></li> 
-    </ul>
+    <h3 class="text-center">Geschichte</h3>
+    <p class="text-center">Die Geschichte des Motorrads ist zunächst die Geschichte des Fahrrads.[6] Sie begann 1817 mit der „Laufmaschine“ von Karl Drais. In den 1860er-Jahren wurde die Tretkurbel erfunden. Pierre Michaux entwickelte 1869 das Dampfrad, das als Vorläufer des Motorrads gilt; Dampfräder wurden bis in die 1890er-Jahre in den USA hergestellt.
+
+Gottlieb Daimler und Wilhelm Maybach konstruierten 1885 den Reitwagen, einen Versuchsträger für den schnelllaufenden mit Benzin betriebenen Ottomotor. Dieses Fahrzeug gilt – trotz seiner seitlichen Stützräder – als erstes Motorrad.[7] Erstes Serienmotorrad mit Benzinmotor ist die Hildebrand & Wolfmüller von 1894. Dieser Hersteller verwendete erstmals das Wort „Motorrad“ und ließ es patentrechtlich schützen.[8] 1897 ging das De-Dion-Bouton-Motordreirad in Produktion, das erfolgreichste Motorfahrzeug vor der Jahrhundertwende. Im gleichen Jahr entwickelten die Gebrüder Werner in Frankreich ein Motorrad mit Frontantrieb. Mit der technischen Innovation des Spritzdüsenvergasers, einem Patent von Wilhelm Maybach von 1893, und der Magnetzündung, einem Patent von Robert Bosch von 1901, wurde das Motorrad wesentlich einfacher benutzbar.</p>
+ 
     
     <div class="row text-center">
       <div class="col-sm-4">
@@ -404,61 +402,6 @@
   </div>
 </div>
 
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
 
 </body>
 </html>
