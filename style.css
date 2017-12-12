@@ -78,9 +78,7 @@ letter-spacing: 10px;
       background-color: #333;
       color: #fff !important;
       text-align: center;
-      font-size: 60px;
-    letter-spacing: 5px;
-  }
+     }
   .modal-header, .modal-body {
       padding: 40px 50px;
   }
