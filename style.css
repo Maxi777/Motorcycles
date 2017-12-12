@@ -31,7 +31,7 @@
   .carousel-caption h3 {
        color: #cc9900 !important; 
   }
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
