@@ -41,7 +41,9 @@
       color: #cc9900;
   }
   .bg-1 h3 {color: #fff;
-font-size: 60px; }
+font-size: 60px;
+letter-spacing: 10px;
+}
   .bg-1 p {font-style: italic;}
   .list-group-item:first-child {
       border-top-right-radius: 0;
@@ -76,7 +78,8 @@ font-size: 60px; }
       background-color: #333;
       color: #fff !important;
       text-align: center;
-      font-size: 30px;
+      font-size: 60px;
+    letter-spacing: 5px;
   }
   .modal-header, .modal-body {
       padding: 40px 50px;
